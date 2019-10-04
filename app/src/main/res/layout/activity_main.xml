@@ -27,18 +27,5 @@
         android:layout_gravity="center"
         android:text="@string/frase2"
         />
-    <Button
-        android:id="@+id/btnChange"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/btnChange"
-        />
-    <TextView
-        android:id="@+id/txtNumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text=""
-        />
+
 </LinearLayout>
