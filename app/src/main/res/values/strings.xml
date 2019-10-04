@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="frase1">Hello world</string>
-    <string name="frase2">Hola Mundo</string>
+    <string name="sentence1">Hello world</string>
+    <string name="sentence2">Hola Mundo</string>
     <string name="btnChange">click me</string>
-    <string name="mensaje">It works</string>
+    <string name="mensg">It works</string>
 
 </resources>

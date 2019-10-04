@@ -13,18 +13,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val helloText: TextView = findViewById(R.id.holaworld)
-        val btnchange: Button = findViewById(R.id.btnChange)
-        val numerotxt: TextView = findViewById(R.id.txtNumero)
+        val btnChange: Button = findViewById(R.id.btnChange)
+        val txtNum: TextView = findViewById(R.id.txtNumero)
 
-        var numero: Int = 1
-        numerotxt.text = numero.toString()
+        var num: Int = 0
+        txtNum.text = num.toString()
 
 
-        val alerta = getString(R.string.btnChange)
-        btnchange.setOnClickListener {
-            Toast.makeText(MainActivity@ this, alerta, Toast.LENGTH_SHORT).show()
-            numero++
-            numerotxt.text = numero.toString()
+        val alert = getString(R.string.mensg) 
+        btnChange.setOnClickListener {
+            Toast.makeText(MainActivity@ this, alert, Toast.LENGTH_SHORT).show()
+            num++
+            txtNum.text = num.toString()
         }
     }
 }
