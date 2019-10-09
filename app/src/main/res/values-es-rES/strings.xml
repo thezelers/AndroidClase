@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mi aplicacion</string>
+    <string name="sentence1">Hola mundo</string>
+    <string name="sentence2">Hello World</string>
+    <string name="btnChange">Púlsame</string>
+    <string name="mensg">Funciona</string>
+
+</resources>
