@@ -6,5 +6,7 @@
     <string name="mensg">It works</string>
     <string name="personimage">PersonImage</string>
     <string name="ej2">Ej2</string>
+    <string name="bday">Birth day</string>
+    <string name="city">City</string>
 
 </resources>

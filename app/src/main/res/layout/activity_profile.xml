@@ -5,93 +5,95 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    tools:context=".profileActivity"
     android:layout_height="match_parent"
-    android:padding="10dp">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-
-    >
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/personimage"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
-        android:gravity="center_horizontal"
-        tools:text="Nombre de Persona"
-        android:textColor="#6200EA"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+    android:padding="10dp"
+    tools:context=".profileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgPersona"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/personimage"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:textColor="#6200EA"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:text="Nombre de Persona" />
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:baselineAligned="false"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/Profile"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                tools:text="Fecha de  Nacimiento" />
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/Profile"
-                android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bday"
+                    android:textStyle="bold"
+                    tools:text="Fecha de  Nacimiento" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city"
+                    android:textStyle="bold"
+                    tools:text="Ciudad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                tools:text="Ciudad" />
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtdDay"
+                    style="@style/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="11/02/99" />
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    style="@style/Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    tools:text="Madrid" />
+            </LinearLayout>
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/txtdesc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="11/02/99"
-                style="@style/Profile" />
-
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/Profile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                tools:text="Madrid" />
-        </LinearLayout>
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus risus nec velit posuere condimentum. Nullam sodales erat vel mauris eleifend venenatis. Etiam facilisis bibendum tempor. Duis in quam turpis. Ut ultrices dignissim risus ac efficitur. Suspendisse tincidunt dolor quis purus facilisis consequat. In volutpat ligula vitae efficitur porttitor. Maecenas quis diam imperdiet, aliquet nibh at, dapibus est." />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="330dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus risus nec velit posuere condimentum. Nullam sodales erat vel mauris eleifend venenatis. Etiam facilisis bibendum tempor. Duis in quam turpis. Ut ultrices dignissim risus ac efficitur. Suspendisse tincidunt dolor quis purus facilisis consequat. In volutpat ligula vitae efficitur porttitor. Maecenas quis diam imperdiet, aliquet nibh at, dapibus est."
-       />
-
-</LinearLayout>
 </ScrollView>
