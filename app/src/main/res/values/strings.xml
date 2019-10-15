@@ -4,5 +4,7 @@
     <string name="sentence2">Hola Mundo</string>
     <string name="btnChange">click me</string>
     <string name="mensg">It works</string>
+    <string name="personimage">PersonImage</string>
+    <string name="ej2">Ej2</string>
 
 </resources>
