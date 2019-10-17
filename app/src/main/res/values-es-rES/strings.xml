@@ -4,5 +4,9 @@
     <string name="sentence2">Hello World</string>
     <string name="btnChange">Púlsame</string>
     <string name="mensg">Funciona</string>
+    <string name="personimage">Imagen de la persona</string>
+    <string name="ej2">Ej2</string>
+    <string name="bday">Fecha de  Nacimiento</string>
+    <string name="city">Ciudad</string>
 
 </resources>
