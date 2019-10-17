@@ -10,7 +10,7 @@ class profileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        textView.text=intent.getStringExtra("Name")
+        textName.text=intent.getStringExtra("Name")
         val ima = intent.getIntExtra("image",R.drawable.seniores2)
         imgPersona.setImageResource(ima)
         txtdDay.text=intent.getStringExtra("bDate")
