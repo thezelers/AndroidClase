@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Android Class</string>
     <string name="sentence1">Hello world</string>
     <string name="sentence2">Hola Mundo</string>
     <string name="btnChange">click me</string>
@@ -8,5 +8,12 @@
     <string name="ej2">Ej2</string>
     <string name="bday">Birth day</string>
     <string name="city">City</string>
+    <string name="year">Year</string>
+    <string name="gender">Gender</string>
+    <string name="film_image">film image</string>
+    <string name="ej3">Ej3</string>
+    <string name="star_btn">Star Btn</string>
+    <string name="plus_btn">Plus Btn</string>
+    <string name="share_btn">Share Btn</string>
 
 </resources>

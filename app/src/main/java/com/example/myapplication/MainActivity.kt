@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         txtNum.text = num.toString()
 
         val intent = Intent(this, profileActivity::class.java)
+        val intentMov = Intent(this, MovieDetailActivity::class.java)
 
         val alert = getString(R.string.mensg)
         btnChange.setOnClickListener {
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tincidunt sem, ac venenatis augue. Suspendisse nec ante sit amet metus facilisis aliquam. Maecenas odio lectus, vestibulum eget ultricies vel, blandit id sem. Maecenas eget turpis ac nunc ornare consectetur et in nunc. Mauris mi tellus, eleifend non commodo nec, sagittis et nisl. Donec tincidunt arcu nec eros mollis maximus. Fusce nisl ipsum, tristique eu dui id, laoreet finibus orci. Cras pretium ac quam rhoncus pretium. Integer pharetra efficitur blandit. Nulla a lectus posuere, aliquam ligula quis, tempus felis. In hac habitasse platea dictumst. ante sit amet metus facilisis aliquam. Maecenas odio lectus, vestibulum eget ultricies vel, blandit id sem. Maecenas eget turpis ac nunc ornare consectetur et in nunc. Mauris mi tellus, eleifend non commodo nec, sagittis et nisl. Donec tincidunt arcu nec eros mollis maximus. Fusce nisl ipsum, tristique eu dui id, laoreet finibus orci. Cras pretium ac quam rhoncus pretium. Integer pharetra efficitur blandit. Nulla a lectus posuere, aliquam ligula quis, tempus felis. In hac habitasse platea dictumst. ante sit amet metus facilisis aliquam. Maecenas odio lectus, vestibulum eget ultricies vel, blandit id sem. Maecenas eget turpis ac nunc ornare consectetur et in nunc. Mauris mi tellus, eleifend non commodo nec, sagittis et nisl. Donec tincidunt arcu nec eros mollis maximus. Fusce nisl ipsum, tristique eu dui id, laoreet finibus orci. Cras pretium ac quam rhoncus pretium. Integer pharetra efficitur blandit. Nulla a lectus posuere, aliquam ligula quis, tempus felis. In hac habitasse platea dictumst. ante sit amet metus facilisis aliquam. Maecenas odio lectus, vestibulum eget ultricies vel, blandit id sem. Maecenas eget turpis ac nunc ornare consectetur et in nunc. Mauris mi tellus, eleifend non commodo nec, sagittis et nisl. Donec tincidunt arcu nec eros mollis maximus. Fusce nisl ipsum, tristique eu dui id, laoreet finibus orci. Cras pretium ac quam rhoncus pretium. Integer pharetra efficitur blandit. Nulla a lectus posuere, aliquam ligu ante sit amet metus facilisis aliquam. Maecenas odio lectus, vestibulum eget ultricies vel, blandit id sem. Maecenas eget turpis ac nunc ornare consectetur et in nunc. Mauris mi tellus, eleifend non commodo nec, sagittis et nisl. Donec tincidunt arcu nec eros mollis maximus. Fusce nisl ipsum, tristique eu dui id, laoreet finibus orci. Cras pretium ac quam rhoncus pretium. Integer pharetra efficitur blandit. Nulla a lectus posuere, aliquam ligula quis, tempus felis. In hac habitasse platea dictumst.la quis, tempus felis. In hac habitasse platea dictumst."
             )
             startActivity(intent)
+        }
+        btnEj3.setOnClickListener(){
+            startActivity(intentMov)
         }
     }
 }

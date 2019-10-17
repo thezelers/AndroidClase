@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movImg"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/film_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="yearTxt,genderTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <TextView
+            android:id="@+id/movNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="61dp"
+            android:fontFamily="monospace"
+            android:textColor="#8BC34A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movImg"
+            tools:text="Pulp Fiction" />
+
+        <TextView
+            android:id="@+id/yearTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/year"
+            app:layout_constraintStart_toStartOf="@+id/movNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/movNameTxt" />
+
+        <TextView
+            android:id="@+id/movYearTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yearTxt"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            tools:text="13/1/94" />
+
+        <TextView
+            android:id="@+id/genderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/gender"
+            app:layout_constraintStart_toStartOf="@+id/yearTxt"
+            app:layout_constraintTop_toBottomOf="@+id/yearTxt" />
+
+        <TextView
+            android:id="@+id/movGenderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/genderTxt"
+            app:layout_constraintStart_toEndOf="@+id/barrier"
+            tools:text="Action" />
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/genderTxt"
+            app:layout_constraintTop_toBottomOf="@+id/genderTxt"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat aliquam erat, eget finibus libero dapibus in.nibus aliquet necelit a fermentum. Praesent rhoncus enim magna, ac vehicula tellus commodo eget. Nam sed tellus at lorem vehicula congue. Cras neque augue, facilisis id dolor a, tempus placerat est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat aliquam erat, eget finibus libero dapibus in.nibus aliquet necelit a fermentum. Praesent rhoncus enim magna, ac vehicula tellus commodo eget. Nam sed tellus at lorem vehicula congue. Cras neque augue, facilisis id dolor a, tempus placerat est. " />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/star_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/descTxt"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/descTxt"
+            app:layout_constraintTop_toBottomOf="@+id/descTxt"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/share_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/descTxt"
+            app:layout_constraintStart_toStartOf="@+id/descTxt"
+            app:layout_constraintTop_toBottomOf="@+id/descTxt"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/plus_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/descTxt"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="@+id/descTxt"
+            app:layout_constraintTop_toBottomOf="@+id/descTxt"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
