@@ -8,9 +8,10 @@ import kotlinx.android.synthetic.main.activity_movie_detail.*
 
 class MovieDetailActivity: AppCompatActivity() {
 
-    val movie = Movie(
+    val movie = Movie2(
         name = "Peliculon",
-        id = 1,gender = "Maravillosa",
+        id = 1,
+        gender = "Maravillosa",
         year = "2020",
         desc = "Esto es una descripcion",
         image = "https://fotografias.lasexta.com/clipping/cmsimages01/2013/07/30/FE687635-403F-4209-9EC5-0CDF1CB7104F/58.jpg" )
