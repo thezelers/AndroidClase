@@ -15,5 +15,9 @@
     <string name="star_btn">Star Btn</string>
     <string name="plus_btn">Plus Btn</string>
     <string name="share_btn">Share Btn</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="release_date">Release Date</string>
+    <string name="title">Title</string>
+    <string name="original_title">Original title</string>
 
 </resources>
