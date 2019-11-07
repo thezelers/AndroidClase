@@ -19,5 +19,10 @@
     <string name="release_date">Release Date</string>
     <string name="title">Title</string>
     <string name="original_title">Original title</string>
+    <string name="ej4">EJ4</string>
+    <string name="search">Buscar</string>
+    <string name="favorites">Favoritos</string>
+    <string name="profile">Perfil</string>
+    <string name="fav_fragment">Fav fragment</string>
 
 </resources>
