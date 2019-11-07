@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         txtNum.text = num.toString()
 
         val intent = Intent(this, profileActivity::class.java)
+        val intentML = Intent(this, MovieListActivity::class.java)
         val intentMov = Intent(this, MovieDetailActivity::class.java)
 
         val alert = getString(R.string.mensg)
@@ -43,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         }
         btnEj3.setOnClickListener(){
             startActivity(intentMov)
+        }
+        ej3Btn.setOnClickListener(){
+            startActivity(intentML)
         }
     }
 }
