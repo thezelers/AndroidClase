@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, profileActivity::class.java)
         val intentML = Intent(this, MovieListActivity::class.java)
         val intentMov = Intent(this, MovieDetailActivity::class.java)
+        val intentMovT4 = Intent(this, MovieT4Activity::class.java)
 
         val alert = getString(R.string.mensg)
         btnChange.setOnClickListener {
@@ -48,5 +49,9 @@ class MainActivity : AppCompatActivity() {
         ej3Btn.setOnClickListener(){
             startActivity(intentML)
         }
+        ej4btn.setOnClickListener(){
+            startActivity(intentMovT4)
+        }
+
     }
 }

@@ -62,4 +62,10 @@
         android:layout_height="wrap_content"
         android:text="@string/ej3" />
 
+    <Button
+        android:id="@+id/ej4btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ej4" />
+
 </LinearLayout>
